@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+ <h1 id="title">Registration Form</h1>
+ <p id="description">Fill the registration form  below keenly to enter the dancing competition.</p>
+ <div>
+   <form id="survey-form">
+     <div>
+     <label id="name-label" for="name">Name</label>
+       <input 
+        id="name"
+        type="text"
+        required
+        placeholder="Full name"/>
+     <label id="email-label" for="email">Email</label>
+       <input 
+        id="email"
+        type="email"
+        required
+        placeholder="Email"/>
+    <label id="number-label" for="age">Age</label>
+      <input 
+        id="number"
+        type="number"
+        required
+        min="10"
+        max="99"
+        placeholder="10" />
+     </div>
+     <div>
+      <p>Which option best describes your current role?</p>
+        <select id="dropdown">
+          <option>Student</option>
+          <option>Coach</option>
+          <option>Adjudicator</option>
+          <option>Parent</option>
+          <option>Spectator</option>
+        </select>
+      </div>
+      <div>
+        <p>Gender</p>
+        <label>Male <input type="radio" name="gender" value="male" class="inline"/> </label>
+        <label>Female <input type="radio" name="gender"  value="female" class="inline"/> </label>
+      </div>
+      <div>
+        <p>Type of Dance</p>
+        <label>Ballroom <input type="radio" name="type_of_dance" value="dance" class="inline" /> </label>
+        <label>Social <input type="radio" name="type_of_dance" value="bachata" class="inline" /> </label>
+        <label>Hip-hop <input type="radio" name="type_of_dance" value="bachata" class="inline"/> </label>
+      </div>
+      <div>
+        <p>Day of Competition</p>
+        <label>Saturday <input type="checkbox" name="day" value="dance" class="inline"/> </label>
+        <label>Sunday <input type="checkbox" name="day"  value="bachata" class="inline"/> </label>
+      </div>
+      <div>
+        <p>Comments</p>
+        <textarea id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here...">
+  
+        </textarea>
+      </div>
+      <div>
+        <button type="submit" id="submit" class="submit-button"> Submit </button>
+      </div>
+   </form>
+ </div>
+  </body>
+</html>
